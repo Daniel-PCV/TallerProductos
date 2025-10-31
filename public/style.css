@@ -1,0 +1,197 @@
+/* Estilos personalizados para el Taller de Productos */
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Estilo para el header */
+header h1 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 0.95em;
+}
+
+/* Mejoras para las cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Estilo para formularios */
+.form-label {
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo para botones */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Estilo para la tabla */
+.table {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Estilo para botones de acciones */
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+}
+
+.btn-outline-info {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+  color: white;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  color: white;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Estilo para el campo de búsqueda */
+.input-group .form-control {
+  border-right: none;
+}
+
+.input-group .btn {
+  border-left: none;
+  border-color: #ced4da;
+}
+
+/* Estilo para alertas/notificaciones */
+.alert {
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Responsive mejoras */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .col-md-6, .col-md-3 {
+    margin-bottom: 1rem;
+  }
+  
+  .d-flex.gap-2 {
+    flex-direction: column;
+  }
+  
+  .d-flex.gap-2 .btn {
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group {
+    max-width: 100% !important;
+  }
+  
+  .table-responsive {
+    font-size: 0.9em;
+  }
+  
+  .btn-sm {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Estilo para estados de carga */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Animaciones suaves */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo para mensajes vacíos */
+.table td.text-center.text-muted {
+  font-style: italic;
+  color: #6c757d !important;
+}
+
+.table td.text-center.text-danger {
+  color: #dc3545 !important;
+  font-weight: 500;
+}
